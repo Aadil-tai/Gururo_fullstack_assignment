@@ -6,6 +6,7 @@ import left3 from "../assets/Hero/left3.svg"
 import right1 from "../assets/Hero/left4.svg"
 import right2 from "../assets/Hero/left5.svg"
 import right3 from "../assets/Hero/left6.svg"
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
     return (
@@ -28,8 +29,8 @@ const HeroSection = () => {
                     <p className="text-black max-w-xl mx-auto mb-8 font-Mont">
                         We seek out world changers and difference makers around the globe, and equip them to fulfill their unique purpose.
                     </p>
-                    <div className="flex gap-4 justify-center">
-                        <button className="bg-secondary hover:text-white  px-6 py-3 rounded">Donate Now</button>
+                    <div className="flex flex-col md:flex-row gap-4 justify-center">
+                        <Link to="/donate">   <button className="bg-secondary hover:text-white  px-6 py-3 rounded-full">Donate Now</button></Link>
                         <button className="border border-white hover:bg-white hover:text-gray-800 px-6 py-3 rounded transition">Know About Us</button>
                     </div>
                 </div>
